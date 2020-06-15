@@ -20,9 +20,12 @@
             <properties>
                 <db.encoding>UTF8</db.encoding>
                 <db.basedir>${project.basedir}/src/main/sqls/postgres</db.basedir>
-                <db.url>jdbc:postgresql://127.0.0.1:5433/shensmartcity</db.url>
+               <db.url>jdbc:postgresql://127.0.0.1:5432/shensmartcity</db.url>
                 <db.username>postgres</db.username>
-                <db.password>postgres</db.password>
+                <db.password>123456</db.password>
+                <!--  <db.url>jdbc:postgresql://127.0.0.1:5433/shensmartcity</db.url> -->
+                <!-- <db.username>postgres</db.username> -->
+                <!-- <db.password>postgres</db.password> -->
                 <db.driver>org.postgresql.Driver</db.driver>
                 <db.groupId>org.postgresql</db.groupId>
                 <db.artifactId>postgresql</db.artifactId>

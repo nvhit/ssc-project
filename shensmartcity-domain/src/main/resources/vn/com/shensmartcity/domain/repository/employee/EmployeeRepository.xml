@@ -3,9 +3,8 @@
     "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace=" vn.com.shensmartcity.domain.repository.sample.EmployeeRepository">
-
-  <resultMap id="customerResultMap" type="Customer">
+<mapper namespace="vn.com.shensmartcity.domain.repository.employee.EmployeeRepository">
+  <resultMap id="employeeResultMap" type="vn.com.shensmartcity.domain.model.Employee">
     <id property="staffCode" column="staff_code" />
     <result property="staffName" column="staff_name" />
     <result property="staffAccount" column="staff_account" />
@@ -20,7 +19,7 @@
     FROM
     employee
     WHERE
-    staff_code = '00000001'
+    staff_code = #{staffCode}
   </select>
 
 </mapper>
